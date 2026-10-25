@@ -13,7 +13,5 @@ PRODUCT_PRODUCT_PROPERTIES += \
     net.pixelos.version=$(CUSTOM_VERSION_PROP)
 
 # Updater
-ifeq ($(IS_OFFICIAL),true)
-    PRODUCT_PRODUCT_PROPERTIES += \
-        net.pixelos.build_type=ci
-endif
+PRODUCT_PRODUCT_PROPERTIES += \
+    net.pixelos.build_type=ci
