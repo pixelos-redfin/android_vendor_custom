@@ -9,3 +9,15 @@ prebuilt_media {
         default: "bootanimation_1080.zip",
     }),
 }
+
+prebuilt_media {
+    name: "bootanimation_pixelos_dark",
+    filename: "bootanimation-dark.zip",
+    product_specific: true,
+    src: select(soong_config_variable("vendor_custom", "bootanimation_res"), {
+        "720": "bootanimation_720.zip",
+        "1080": "bootanimation_1080.zip",
+        "1440": "bootanimation_1440.zip",
+        default: "bootanimation_1080.zip",
+    }),
+}

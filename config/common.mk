@@ -8,7 +8,8 @@ else
 endif
 
 PRODUCT_PACKAGES += \
-    bootanimation_pixelos
+    bootanimation_pixelos \
+    bootanimation_pixelos_dark
 
 # Call Recording
 TARGET_CALL_RECORDING_SUPPORTED ?= true
